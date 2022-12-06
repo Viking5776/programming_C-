@@ -1,6 +1,5 @@
 ﻿// 1.
 // int DecNum(int num){
-//     // int result = (num/10)-(num/100*10);
 //     int result = num/10%10;
 //     return result;
 // }
@@ -10,23 +9,7 @@
 
 
 
-// 2.0.
-// string ThrNum(int num){
-//     if (num>99 || num<-99){
-//         int result = num/100%10;
-//         return Convert.ToString(result);
-//     }
-//     else {
-//         return (Convert.ToString("Третьей цифры нет"));
-//     }
-// }
-// Console.Write($"Введите число: ");
-// string result = ThrNum(Convert.ToInt32(Console.ReadLine()));
-// Console.WriteLine($"{result} - третья цифра из числа");
-
-
-
-// 2.1.
+// 2.
 // int ThrNum(int num){
 //     int result = num/100%10;
 //     return Convert.ToInt32(result);
