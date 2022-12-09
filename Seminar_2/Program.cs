@@ -1,4 +1,4 @@
-﻿// 1.
+﻿// // Задача № 10
 // int DecNum(int num){
 //     int result = num/10%10;
 //     return result;
@@ -9,24 +9,19 @@
 
 
 
-// 2.
-// int ThrNum(int num){
-//     int result = num/100%10;
-//     return Convert.ToInt32(result);
+// // Задача № 13
+// void ThrNum(int num){
+//     if (num < 100){
+//         Console.WriteLine("Третьей цифры нет");
+//     }
+//     else {
+//         Console.WriteLine($"{num/100%10} - третья цифра из числа");
+//     }
 // }
 // Console.Write($"Введите число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// if (num <= 99 && num >= -99){
-//     Console.WriteLine("Третьей цифры нет");
-// }
-// else {
-//     int result = ThrNum(num);
-//     Console.WriteLine($"{result} - третья цифра из числа");
-// }
+// ThrNum(Convert.ToInt32(Console.ReadLine()));
 
-
-
-// 3.
+// // Задача № 15
 // void Date(int num){
 //     if (num>=1 && num<=5){
 //         Console.Write("Трудовыебудни(");
