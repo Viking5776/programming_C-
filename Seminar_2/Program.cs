@@ -3,7 +3,7 @@
 //     int result = num/10%10;
 //     return result;
 // }
-// Console.Write($"Введите трехзначное число: ");
+// Console.Write("Введите трехзначное число: ");
 // int result = DecNum(Convert.ToInt32(Console.ReadLine()));
 // Console.WriteLine($"{result} - вторая цифра из числа");
 
@@ -11,11 +11,17 @@
 
 // // Задача № 13
 // void ThrNum(int num){
+//     if (num <0){
+//         num *=-1;
+//     }   
 //     if (num < 100){
 //         Console.WriteLine("Третьей цифры нет");
-//     }
+//     } 
 //     else {
-//         Console.WriteLine($"{num/100%10} - третья цифра из числа");
+//         for (int i = 0; num >=1000; i++){
+//         num /=10;
+//         }
+//         Console.WriteLine($"{num%10} - третья цифра из числа");
 //     }
 // }
 // Console.Write($"Введите число: ");
