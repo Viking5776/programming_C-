@@ -41,21 +41,21 @@
 
 
 // // Задача № 29
-// int[] Array(){
-//     Console.Write("Введите длину массива: ");
-//     int[] arr = new int [Convert.ToInt32(Console.ReadLine())];
-//     for (int i = 0; i < arr.Length; i++)
-//     {
-//         Console.Write("Введите элемент массива: ");
-//         arr[i] = Convert.ToInt32(Console.ReadLine());            
-//     }
-//     return arr;
-// }
+int[] Array(){
+    Console.Write("Введите длину массива: ");
+    int[] arr = new int [Convert.ToInt32(Console.ReadLine())];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write("Введите элемент массива: ");
+        arr[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    return arr;
+}
 
-// void ShowArray (int[] arr){
+void ShowArray (int[] arr){
 
-//     for (int i=0; i < arr.Length; i++){
-//         Console.Write($"{arr[i]} ");
-//     }
-// }
-// ShowArray(Array());
+    for (int i=0; i < arr.Length; i++){
+        Console.Write($"{arr[i]} ");
+    }
+}
+ShowArray(Array());
