@@ -1,17 +1,17 @@
-﻿int[] Array(int size, int min, int max){
-    int[] array = new int[size];
-    for (int i = 0; i <array.Length; i++){
-        array[i] = new Random().Next(min, max);
-    }
-    return array;
-}
+﻿// int[] Array(int size, int min, int max){
+//     int[] array = new int[size];
+//     for (int i = 0; i <array.Length; i++){
+//         array[i] = new Random().Next(min, max);
+//     }
+//     return array;
+// }
 
-void ShowArray(int[] array){
-    for (int i =0; i <array.Length; i++){
-        Console.Write($"{array[i]} ");
-    }
-    Console.WriteLine();
-}
+// void ShowArray(int[] array){
+//     for (int i =0; i <array.Length; i++){
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
 
 
 // // Задача № 34

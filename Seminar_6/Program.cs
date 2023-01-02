@@ -24,6 +24,23 @@
 // Posit(array);
 
 
+// void Posit(int size){
+//     int count = 0;
+//     for (int i = 1; i <= size; i++){ 
+//         Console.WriteLine($"Enter the {i}st(nd,rd,th) number");
+//         int num = Convert.ToInt32(Console.ReadLine());
+//         if (num > 0){
+//             count++;
+//         }
+//     }
+//     Console.WriteLine($"Numbers greater than zero: {count}");
+// }
+
+// Console.WriteLine("Enter the number of numbers");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Posit(size);
+
+
 
 // // Задача № 43
 // void Intersection(double b1, double k1, double b2, double k2){
