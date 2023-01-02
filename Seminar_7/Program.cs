@@ -96,13 +96,13 @@
 // }
 
 // void Columns(int[,] matrix){
-//     for (int i =0; i <matrix.GetLength(0); i++){
+//     for (int i =0; i <matrix.GetLength(1); i++){
 //         int sum = 0;
-//         for (int j =0; j <matrix.GetLength(1); j++){
-//             sum += matrix[i,j];
+//         for (int j =0; j <matrix.GetLength(0); j++){
+//             sum += matrix[j,i];
 //         }
-//         double arithMean = (double)sum/matrix.GetLength(1);
-//         Console.WriteLine($"Среднее арифметическое {i}-й строки: {arithMean}");
+//         double arithMean = (double)sum/matrix.GetLength(0);
+//         Console.WriteLine($"Среднее арифметическое {i}-го столбца: {Math.Round(arithMean, 1)}");
 //     }
 // }
 // Console.Write("Введите количество строк: ");
