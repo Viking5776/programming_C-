@@ -75,7 +75,7 @@
 
 
 
-// // Задача № 52 Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// // Задача № 52
 // int[,] Matrix(int rows, int columns, int min, int max){
 //     int[,] matrix = new int[rows, columns];
 //     for (int i =0; i <matrix.GetLength(0); i++){
