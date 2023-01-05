@@ -244,21 +244,21 @@
 // int[,] MatrixSpiral(int rows, int columns){
 //     int[,] matrix = new int[rows, columns];
 //     int count = 1;
-//     for (int i =0; count <=rows*columns; i++){
-//         for (int j = 0+i; j<matrix.GetLength(1)-i; j++){
-//             matrix[0+i, j] = count;
+//     for (int k =0; count <=rows*columns; k++){
+//         for (int j = 0+k; j<=matrix.GetLength(1)-(1+k) && count <=rows*columns || j==k; j++){
+//             matrix[0+k, j] = count;
 //             count++;
 //         }
-//         for (int j = 1+i; j<matrix.GetLength(1)-i; j++){
-//             matrix[j, matrix.GetLength(1)-(1+i)] = count;
+//         for (int i = 1+k; i<matrix.GetLength(0)-(1+k) && count <=rows*columns; i++){
+//             matrix[i, matrix.GetLength(1)-(1+k)] = count;
 //             count++;
 //         }
-//         for (int j = matrix.GetLength(0)-(2+i); j>=0+i; j--){
-//             matrix[matrix.GetLength(0)-(1+i), j] = count;
+//         for (int j = matrix.GetLength(1)-(1+k); j>0+k && count <=rows*columns; j--){
+//             matrix[matrix.GetLength(0)-(1+k), j] = count;
 //             count++;
 //         }
-//         for (int j = matrix.GetLength(1)-(2+i); j>=1+i; j--){
-//             matrix[j, 0+i] = count;
+//         for (int i = matrix.GetLength(0)-(1+k); i>0+k && count <=rows*columns; i--){
+//             matrix[i, 0+k] = count;
 //             count++;
 //         }
 //     }
@@ -268,7 +268,12 @@
 // void ShowMatrix(int[,] matrix){
 //     for (int i =0; i <matrix.GetLength(0); i++){
 //         for (int j =0; j <matrix.GetLength(1); j++){
-//             Console.Write($"{matrix[i,j]} "); 
+//             if (matrix[i,j]<10){
+//                 Console.Write($"0{matrix[i,j]} ");
+//             }
+//             else {
+//                 Console.Write($"{matrix[i,j]} ");
+//             } 
 //         }
 //         Console.WriteLine();
 //     }
@@ -278,13 +283,6 @@
 // int rows = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите количество столбцов: ");
 // int columns = Convert.ToInt32(Console.ReadLine());
-// while (rows != columns){
-//     Console.WriteLine("Ошибка! ");
-//     Console.Write("Введите количество строк: ");
-//     rows = Convert.ToInt32(Console.ReadLine());
-//     Console.Write("Введите количество столбцов: ");
-//     columns = Convert.ToInt32(Console.ReadLine());
-// }
 // int[,] matrix = MatrixSpiral(rows, columns);
 // ShowMatrix(matrix);
 // Console.WriteLine();
